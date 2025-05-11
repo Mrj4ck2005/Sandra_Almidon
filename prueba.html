@@ -1,42 +1,180 @@
-<html>
-	<head>
-		<style type="text/css">
-			.parrafo {
-				background-color:blue;
-				color: white;
-				width: 250px;
-			}
-		</style>
-	</head>
-	<body>
-		<p class="parrafo">
-			<b>Listado de usuarios:</b>
-		</p>
-		<table border="1">
-			<thead>
-				<tr>
-					<th>Nombre</th>
-					<th>Dirección</th>
-					<th>Correo</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Javier</td>
-					<td>La Merced 123</td>
-					<td>javier@mail.com</td>
-				</tr>
-				<tr>
-					<td>Rebeka</td>
-					<td>Amazonas 115</td>
-					<td>rebeka@mail.com</td>
-				</tr>
-				<tr>
-					<td>Ferdinand</td>
-					<td>Ambato 342</td>
-					<td>ferdinand@mail.com</td>
-				</tr>
-			</tbody>
-		</table>
-	</body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Municipalidad Distrital de Soraya</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #005c99;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #003d66;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h3 {
+      color: #005c99;
+      border-bottom: 2px solid #005c99;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .services, .news {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      color: #003d66;
+    }
+
+    .card p {
+      font-size: 0.95em;
+    }
+
+    footer {
+      background: #003d66;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer small {
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Municipalidad Distrital de Soraya</h1>
+    <p>Comprometidos con el desarrollo y bienestar de nuestra comunidad</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Noticias</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <div class="hero">
+      <h2>¡Bienvenidos a Soraya!</h2>
+      <p>Juntos construimos un futuro mejor para todos</p>
+    </div>
+
+    <section class="section">
+      <h3>Servicios Municipales</h3>
+      <div class="services">
+        <div class="card">
+          <h4>Registro Civil</h4>
+          <p>Actas de nacimiento, matrimonio y defunción disponibles de manera rápida y segura.</p>
+        </div>
+        <div class="card">
+          <h4>Limpieza Pública</h4>
+          <p>Recolección eficiente de residuos y mantenimiento de espacios públicos.</p>
+        </div>
+        <div class="card">
+          <h4>Licencias y Permisos</h4>
+          <p>Facilitamos tus trámites con atención personalizada y rápida respuesta.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Últimas Noticias</h3>
+      <div class="news">
+        <div class="card">
+          <h4>Nuevo parque recreativo inaugurado</h4>
+          <p>Un espacio verde para el disfrute de las familias y la promoción de actividades saludables.</p>
+        </div>
+        <div class="card">
+          <h4>Campaña de salud gratuita</h4>
+          <p>Exámenes médicos, vacunación y orientación en salud preventiva para todos los vecinos.</p>
+        </div>
+        <div class="card">
+          <h4>Mejoras en vías rurales</h4>
+          <p>Proyecto de asfaltado y mantenimiento de caminos rurales en ejecución.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Municipalidad Distrital de Soraya &copy; 2025</p>
+    <small>Todos los derechos reservados</small>
+  </footer>
+
+</body>
 </html>
